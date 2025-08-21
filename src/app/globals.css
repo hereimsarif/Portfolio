@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: theme('colors.slate.100');
+}
+::-webkit-scrollbar-thumb {
+  background: theme('colors.slate.300');
+  border-radius: 5px;
+}
+
+*, *:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+  transition: background 0.4s;
+}
